@@ -1,0 +1,22 @@
+<?php
+$html_ds sp="";
+foreach ($ds sp as $item) {
+extract($item);
+$hinhanh=IMG_PATH_ADMIN.$img;
+$imgtag="<img src='".$hinhanh."' width='80px'>"; if ($hide=-1){ $hide="<input
+type='checkbox checked>"; }else{ $hide="<input type="checkbox" />"; } if
+($dacbiet==1){ $dacbiet="<input type="checkbox" checked />"; }else{
+$dacbiet="<input type="checkbox" />"; } $html_dssp.= '
+<tr>
+  <td>'.$imgtag. '</td>
+  <td>' . $name. '</td>
+  <td>' .number_format($price, 0, VNĐ</td>
+  11
+  <td>'.$hide. '</td>
+  <td>'.$dacbiet. '</td>
+  <td>
+    <<a href="#" class="btn btn-warning"
+      ><i class="fa-solid fa-pen-to-square"></i
+    ></a>
+  </td>
+</tr>
